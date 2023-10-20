@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<!--<ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Hola mundo esta es mi primer pagina
@@ -26,5 +26,82 @@
 <ion-footer>
   <ion-toolbar>
     <ion-title>Pie de página en mi primer proyecto.</ion-title>
+  </ion-toolbar>
+</ion-footer>-->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+    <img src="\assets\icon\logo2.png">
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!--
+  <ion-grid fixed>
+    <ion-row class="" size="12" fullscreen true>
+      <ion-col size="4">
+        <app-login></app-login>
+      </ion-col>
+      <ion-col size="4">
+        <app-registra></app-registra>
+      </ion-col>
+      <ion-col size="4">
+        <app-recover></app-recover>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <br><br>
+  <br><br>
+  <ion-item-divider>
+    <ion-label style="color: #6c757d; text-align: center; margin: auto; font-weight: bold; font-size: 32px;">TECNOLÓGICO DE ESTUDIOS SUPERIORES DE ECATEPEC.</ion-label>
+  </ion-item-divider>
+  <ion-item-divider>
+    <ion-label style="color: #6c757d; text-align: center; margin: auto; font-size: 26px;">"CONGRESO INTERNACIONAL DE PROYECTOS DE INVESTIGACIÓN E INNOVACIÓN<br>TECNOLÓGICA Y ROBÓTICA 2023"</ion-label>
+  </ion-item-divider>
+  
+  <br><br>
+
+  <ion-slides pager="true">
+    <ion-slide *ngFor="let slide of slider">
+      <img [src]="slide.image"/>
+      <h2 [innerHTML]="slide.title">
+      </h2>
+      <p [innerHTML]="slide.description">
+
+      </p>
+    </ion-slide> 
+  </ion-slides>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div style="background-color: #343a40">
+    <ion-grid fixed>
+      <ion-row class="" size="12" fullscreen true>
+        <div style="color: white; text-align: center; font-weight: bold;">
+          <ion-col size="3">
+            CONTACTO:<br>
+            Av. Tecnológico S/N C.P. 55210 Col. Valle de Anáhuac, Ecatepec de Morelos<br>
+            Estado de México.<br>
+            Teléfono: 01 (55) 50 00 23 00.
+          </ion-col>
+        </div>
+        <ion-col size="3"></ion-col>
+        <div style="color: white; text-align: center; font-weight: bold;">
+          <ion-col size="3">
+            ENCUÉNTRANOS EN LAS REDES<br>
+            <a href="https://www.facebook.com/FamiliaTESE">
+              <img src="\assets\icon\face1.png">
+            </a><br>
+            <a href="https://www.youtube.com/channel/UC-QmepRifyoSZ3m4xeqUulQ">
+              <img src="\assets\icon\youtube1.ico">
+            </a>
+          </ion-col>
+        </div>
+      </ion-row>
+    </ion-grid>
+  </div>
   </ion-toolbar>
 </ion-footer>
