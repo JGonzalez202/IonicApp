@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
 import { AccessComponent } from './access/access.component';
 import { RecoverComponent } from './recover/recover.component';
+import { InstitucionesComponent } from '../principal/instituciones/instituciones.component';
 
 const routes: Routes = [
   {
@@ -19,8 +20,13 @@ const routes: Routes = [
     path: 'recupera',
     component: RecoverComponent,
     
-  }
-  
+  },
+  {
+    path: 'instituciones',
+    component: InstitucionesComponent,
+    
+  },
+    
 ];
 
 @NgModule({

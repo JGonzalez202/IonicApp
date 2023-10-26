@@ -11,6 +11,7 @@ import { RecoverComponent } from './recover/recover.component';
 import { IntegraComponent } from './integra/integra.component';
 import { RegistraComponent } from './registra/registra.component';
 import { AccessComponent } from './access/access.component';
+import { InstitucionesComponent } from '../principal/instituciones/instituciones.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { AccessComponent } from './access/access.component';
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
     ],
-  declarations: [HomePage,LoginComponent,RecoverComponent,IntegraComponent,RegistraComponent,AccessComponent]
+  declarations: [HomePage,LoginComponent,RecoverComponent,IntegraComponent,RegistraComponent,
+    AccessComponent,InstitucionesComponent]
 })
 export class HomePageModule {}
