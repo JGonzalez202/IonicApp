@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -27,6 +28,20 @@ export class HomePage {
 },
 ]
 
-  constructor() {}
+constructor(private ruta:Router) { 
+
+}
+
+  registro(){
+    this.ruta.navigate(["/home/registro"]);
+  }
+
+  actividades(){
+    this.ruta.navigate(["/home/actividades"]);
+  }
+
+  programa(){
+    this.ruta.navigate(["/home/programa"]);
+  }
 
 }
